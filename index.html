@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Biodata Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -49,7 +48,6 @@
         .tab-buttons label:hover {
             background: #c7d2fe;
         }
-
         .tab-content {
             border: 1px solid #ccc;
             padding: 25px;
@@ -68,7 +66,8 @@
         #tab6:checked ~ .contents #content6,
         #tab7:checked ~ .contents #content7,
         #tab8:checked ~ .contents #content8,
-        #tab9:checked ~ .contents #content9 {
+        #tab9:checked ~ .contents #content9,
+        #tab10:checked ~ .contents #content10 {
             display: block;
         }
 
@@ -80,12 +79,12 @@
         #tab6:checked ~ .tab-buttons label[for="tab6"],
         #tab7:checked ~ .tab-buttons label[for="tab7"],
         #tab8:checked ~ .tab-buttons label[for="tab8"],
-        #tab9:checked ~ .tab-buttons label[for="tab9"] {
+        #tab9:checked ~ .tab-buttons label[for="tab9"],
+        #tab10:checked ~ .tab-buttons label[for="tab10"] {
             background: #6366f1;
             color: white;
             font-weight: bold;
         }
-
 
         ul {
             padding-left: 20px;
@@ -93,7 +92,6 @@
         ul li {
             margin-bottom: 10px;
         }
-
 
         #content6 img {
             margin: 10px;
@@ -133,6 +131,7 @@
     <input type="radio" id="tab7" name="tab">
     <input type="radio" id="tab8" name="tab">
     <input type="radio" id="tab9" name="tab">
+    <input type="radio" id="tab10" name="tab">
 
     <div class="tab-buttons">
         <label for="tab1">Personal</label>
@@ -144,11 +143,12 @@
         <label for="tab7">Profiles</label>
         <label for="tab8">Projects</label>
         <label for="tab9">Certifications</label>
+        <label for="tab10">Objective</label>
     </div>
 
     <div class="contents">
 
-        <div id="content1" class="tab-content">
+       <div id="content1" class="tab-content">
             <h2>Personal Information</h2>
             <table>
                 <tr><th>Field</th><th>Details</th></tr>
@@ -229,6 +229,20 @@
                 <li>HTML & CSS Web Development Basics</li>
                 <li>Problem Solving and Logical Thinking Course</li>
             </ul>
+        </div>
+
+
+        <div id="content10" class="tab-content">
+            <h2>Career Objective</h2>
+            <p>
+                A motivated Computer Science Engineering student seeking opportunities
+                to enhance technical skills and gain real-world experience.
+            </p>
+            <p>
+                👉 <a href="contact_resume.html" target="_blank">
+                    Contact Me & Download Resume
+                </a>
+            </p>
         </div>
 
     </div>
